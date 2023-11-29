@@ -2,35 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="style.css">
+    <title>Movie Info</title>
 </head>
 <body>
-    
-    <div class = "wrapper">
-        <div class = "search-container">
-            <div class = "search-element">
-                <h3 class="search">Search Movie:</h3>
-                <input type = "text" class = "form-control" placeholder="Search Movie Title ..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
-
-                <div class = "search-list" id = "search-list">
-
-                </div>
-            </div>
-        </div>
-        <div class = "container">
-            <div class = "result-container">
-                <div class = "result-grid" id = "result-grid">
-
-                </div>
-            </div>
+    <div class="container">
+        <h1>Movie Info</h1>
+        <input type="text" id="movie-search-box" placeholder="Enter movie title">
+        <button onclick="findMovies()">Search</button>
+        <a href="favorites.html">Favorites</a>
+        <div id="search-list" class="hide-search-list"></div>
+        <div class="overlay hidden">
+          <div id="result-grid"></div>
         </div>
     </div>
 
-
-
-    <script src = "script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

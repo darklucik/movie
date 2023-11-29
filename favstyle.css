@@ -1,0 +1,17 @@
+* {
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
