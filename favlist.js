@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', displayFavorites);
 
 function displayFavorites() {
-    const favoritesList = document.getElementById('favslist');
+    const favoritesList = document.getElementById('favorites-list');
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
     if (favorites.length > 0) {
